@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.example.n1exercici2.CalculateDni;
 import org.example.n1exercici2.Dni;
 import org.example.n1exercici2.DummyDni;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -28,11 +27,6 @@ public class CalculateDniTest {
         );
     }
 
-
-    @Test
-    public void checkCalculation(){
-        assertEquals('Z', DummyDni.dniZ());
-    }
 
     @ParameterizedTest
     @ValueSource(chars = 'Z')
