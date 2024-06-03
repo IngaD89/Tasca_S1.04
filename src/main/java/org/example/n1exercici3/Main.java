@@ -4,9 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-
         error();
-        } catch (RuntimeException e){
+        } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Array out of index");
         }
 
